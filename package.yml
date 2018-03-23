@@ -1,0 +1,19 @@
+name       : ruby-winrm-fs
+version    : 1.2.0
+release    : 1
+source     :
+    - https://rubygems.org/downloads/winrm-fs-1.2.0.gem : cf940f8cb0ad84ecf79890f7327ad8aed4505ba84231eb299258c29a85147cc4
+license    : Apache-2.0
+component  : programming.ruby
+summary    : RubyGem - winrm-fs
+description: |
+    Ruby library for file system operations via Windows Remote Management.
+builddeps  :
+    - pkgconfig(ruby-2.3)
+rundeps    :
+    - ruby-erubis
+    - ruby-logging
+    - ruby-winrm
+    - rubyzip
+install    : |
+    %gem_install
